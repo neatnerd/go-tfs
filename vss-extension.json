@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "go-build",
+    "name": "Go Build Tools",
+    "version": "0.0.1",
+    "publisher": "Arshinskiy Mike",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for building Go applications",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "images/golang.png"        
+    },
+    "files": [
+        {
+            "path": "buildtask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ]
+}

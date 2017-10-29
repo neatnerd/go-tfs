@@ -1,0 +1,37 @@
+{
+    "id": "e25220f0-9ab2-4690-a891-a81669742629",
+    "name": "build",
+    "friendlyName": "Go Build",
+    "description": "Build Go Application",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Arshinskiy Mike",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "inputs": [
+        {
+            "name": "path",
+            "type": "filePath",
+            "label": "Sources",
+            "defaultValue": "/",
+            "required": true,
+            "helpMarkDown": ""
+        }
+    ],
+    "instanceNameFormat": "Building Go sources",
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}

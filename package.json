@@ -1,0 +1,26 @@
+{
+    "name": "go-tfs",
+    "version": "0.1.0",
+    "description": "TFS build tasks",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neatnerd/go-tfs.git"
+    },
+    "scripts": {
+        "build": "npm install && tsc -p .",
+        "postbuild": "npm run package",
+        "package": "tfx extension create",
+        "clean": "rimraf ./scripts && rimraf ./*.vsix"
+    },
+    "devDependencies": {
+        "rimraf":"^2.6.2",
+        "tfx-cli": "^0.4.11",
+        "typescript": "^2.5.3"
+    },
+    "dependencies": {
+        "@types/jquery": "^3.2.15",
+        "@types/q": "^1.0.6",
+        "vss-web-extension-sdk": "^4.125.0"
+    }
+}

@@ -26,12 +26,19 @@
             "defaultValue": "/",
             "required": true,
             "helpMarkDown": ""
+        },
+        {
+            "name": "goroot",
+            "type": "filePath",
+            "label": "GOROOT",
+            "required": false,
+            "helpMarkDown": "Location of Go executable"
         }
     ],
     "instanceNameFormat": "Building Go sources",
     "execution": {
         "Node": {
-            "target": "index.js"
+            "target": "scripts/build.js"
         }
     }
 }

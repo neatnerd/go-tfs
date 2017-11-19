@@ -24,9 +24,6 @@
             "path": "node_modules/vss-web-extension-sdk/lib",
             "addressable": true,
             "packagePath": "lib"
-        },
-        {
-            
         }
     ],
     "contributions": [
